@@ -1,0 +1,11 @@
+services:
+  query-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: query-frontend
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "80:80"
+    restart: unless-stopped
