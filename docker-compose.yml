@@ -4,8 +4,13 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: query-frontend
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
     ports:
       - "80:80"
+    networks:
+      - query-shared
     restart: unless-stopped
+
+networks:
+  query-shared:
+    external: true
+    name: query-shared
