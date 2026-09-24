@@ -15,7 +15,7 @@ const mainLinksData = [
 ];
 
 export default function Navbar() {
-  const hytechName = "HyTech Racing Checkpoint 1";
+  const hytechName = "Kennesaw Motorsports";
 
   const links = mainLinksData.map(({ name, url }) => (
     <NavLink key={name} className="nav-link" to={url}>
@@ -25,11 +25,6 @@ export default function Navbar() {
 
   return (
     <nav id="navbar">
-      <img
-        src={`${import.meta.env.BASE_URL}favicon.ico`}
-        alt="Logo"
-        className="navbar-icon"
-      />
       <Button
         variant="filled"
         component="a"

@@ -2,7 +2,7 @@
 
 nav {
   padding: 15px 0;
-  background: #b3a36a;
+  background: #ffc629;
   display: flex;
   height: 50px;
   align-items: center;
@@ -11,7 +11,7 @@ nav {
 .nav-link {
   padding: 3px 15px;
   text-decoration: none;
-  color: #ffffff;
+  color: #111111;
   background-color: transparent;
   border-radius: 8px;
   font-weight: bold;
@@ -23,26 +23,20 @@ nav {
 }
 
 #navbar a.active {
-  background-color: #978750;
+  background-color: #e0ad20;
   font-weight: bold;
 }
 
 .nav-link:hover {
-  color: white;
-  background-color: #d1bf80;
-}
-
-.navbar-icon {
-  height: 30px;
-  margin-right: 20px;
-  margin-left: 20px;
+  color: #111111;
+  background-color: #ffda75;
 }
 
 .hytechName {
   margin-left: auto;
   margin-right: 10px;
   border-radius: 5px;
-  color: white;
+  color: #111111;
   font-weight: 900;
 }
 
